@@ -1,0 +1,192 @@
+{
+    "supply_stream": {
+        "order": [
+            {
+                "order_id": "1",
+                "date": {
+                    "day": "23",
+                    "month": "4",
+                    "year": "2023"
+                },
+                "supplier_name": "Supplier A",
+                "order_price": "200.00",
+                "products": {
+                    "product": [
+                        {
+                            "product_id": "1",
+                            "category": "Groceries",
+                            "product_name": "Oranges",
+                            "manufacturer_name": "Manufacturer A",
+                            "quantity": "8",
+                            "unit_price": "1.75",
+                            "additional_details": {
+                                "lot_number": "13579",
+                                "expiry_date": {
+                                    "day": "31",
+                                    "month": "9",
+                                    "year": "2024"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "false"
+                            }
+                        },
+                        {
+                            "product_id": "2",
+                            "category": "Groceries",
+                            "product_name": "Milk",
+                            "manufacturer_name": "Manufacturer C",
+                            "quantity": "3",
+                            "unit_price": "2.50",
+                            "additional_details": {
+                                "lot_number": "24680",
+                                "expiry_date": {
+                                    "day": "31",
+                                    "month": "5",
+                                    "year": "2024"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "true"
+                            }
+                        },
+                        {
+                            "product_id": "3",
+                            "category": "Household",
+                            "product_name": "Dish Soap",
+                            "manufacturer_name": "Manufacturer D",
+                            "quantity": "6",
+                            "unit_price": "3.00",
+                            "additional_details": {
+                                "lot_number": "98765",
+                                "expiry_date": {
+                                    "day": "31",
+                                    "month": "12",
+                                    "year": "2029"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "false"
+                            }
+                        },
+                        {
+                            "product_id": "4",
+                            "category": "Household",
+                            "product_name": "Toilet Paper",
+                            "manufacturer_name": "Manufacturer E",
+                            "quantity": "10",
+                            "unit_price": "1.00",
+                            "additional_details": {
+                                "lot_number": "54321",
+                                "expiry_date": {
+                                    "day": "31",
+                                    "month": "12",
+                                    "year": "2028"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "false"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "order_id": "2",
+                "date": {
+                    "day": "10",
+                    "month": "10",
+                    "year": "2023"
+                },
+                "supplier_name": "Supplier B",
+                "order_price": "100.00",
+                "products": {
+                    "product": [
+                        {
+                            "product_id": "10",
+                            "category": "Groceries",
+                            "product_name": "Bananas",
+                            "manufacturer_name": "Manufacturer A",
+                            "quantity": "5",
+                            "unit_price": "1.20",
+                            "additional_details": {
+                                "lot_number": "11223",
+                                "expiry_date": {
+                                    "day": "31",
+                                    "month": "7",
+                                    "year": "2024"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "false"
+                            }
+                        },
+                        {
+                            "product_id": "20",
+                            "category": "Groceries",
+                            "product_name": "Eggs",
+                            "manufacturer_name": "Manufacturer F",
+                            "quantity": "12",
+                            "unit_price": "0.50",
+                            "additional_details": {
+                                "lot_number": "44556",
+                                "expiry_date": {
+                                    "day": "31",
+                                    "month": "5",
+                                    "year": "2024"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "true"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "order_id": "3",
+                "date": {
+                    "day": "29",
+                    "month": "3",
+                    "year": "2024"
+                },
+                "supplier_name": "Supplier C",
+                "order_price": "80.00",
+                "products": {
+                    "product": [
+                        {
+                            "product_id": "9",
+                            "category": "Groceries",
+                            "product_name": "Tomatoes",
+                            "manufacturer_name": "Manufacturer A",
+                            "quantity": "7",
+                            "unit_price": "1.50",
+                            "additional_details": {
+                                "lot_number": "77889",
+                                "expiry_date": {
+                                    "day": "20",
+                                    "month": "5",
+                                    "year": "2024"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "false"
+                            }
+                        },
+                        {
+                            "product_id": "10",
+                            "category": "Groceries",
+                            "product_name": "Cheese",
+                            "manufacturer_name": "Manufacturer G",
+                            "quantity": "4",
+                            "unit_price": "3.50",
+                            "additional_details": {
+                                "lot_number": "99001",
+                                "expiry_date": {
+                                    "day": "31",
+                                    "month": "12",
+                                    "year": "2025"
+                                },
+                                "is_fragile": "false",
+                                "requires_refrigeration": "true"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,67 @@
+XML si informatie structurata– Cerinte proiect
+Alegerea unui domeniu si modelarea acestuia folosind fisiere xml si
+json.
+Aplicatie cu interfata vizuala (.NET, PHP, JAVA, Python etc) pentru:
+• parsarea documentului xml
+• parsarea documentului json
+• afisarea continutului acestui fisier folosind foi de stiluri.
+Proiectul este individual. Tema este aleasa la ora de laborator.
+Predarea proiectului: saptamana 11/12.
+Materiale necesare pentru predarea finala a proiectului:
+‐ un document care sa contina descrierea domeniului ales, si a constrangerilor avute in
+vedere, etapa de proiectare a documentului xml, descrierea elementelor, descrierea
+documentului XML Schema si DTD asociat, apelul catre foile de stiluri si functionarea
+aplicatiei si a pasilor de parsare a documentelor xml si json
+-o arhiva care sa contina:
+- documentul de mai sus
+- fisierul XML
+- fisierul JSON
+- fisierul DTD
+- fisierul XSD
+- fisierul XSL
+- codul sursa al proiectului
+- prezentarea
+Proiectul se va prezenta la sfarsitul semestrului.
+Proiectul este alcatuit din urmatoarele parti:
+Partea I: Analiza unui domeniu. Se preda un document ce contine:
+• Definirea domeniului si a constrangerilor. Definirea domeniului reprezinta o descriere pe
+scurt a acestuia. Constrangerile pot reprezinta fraze/propozitii exemplu: "Intr-o grupa sunt
+mai multi studenti. Fiecare student este caracterizat de informatiile etc"
+• Documentul XML
+• Documentul JSON
+• Documentul DTD‐ului asociat documentului XML
+Partea a II a: Implementarea aplicatiei – Se prezinta un document cu descrierea aplicatiei
+• Proiectarea XML Schema asociata documentului XML. Fisierul schema trebuie sa contina
+minim o extensie si o restrictie pentru tipuri de date.
+• Utilizarea XSL pentru afisarea datelor din fisierul xml intr-un format de tabel.
+• Proiectarea interfetei vizuale si implementarea intr‐un mediu de programare a aplicatiei
+• Incarcarea documentelor XML si JSON cu ajutorul interfetei, parsarea acestora (trebuie
+parcurs fiecare element/atribut), precum si afisarea datelor stocate in aceste documente
+intr‐un raport.
+Etapele proiectului:
+• Definirea foarte exacta a domeniului ales folosind cerinte si constrangeri
+• Proiectarea documentului XML in concordanta cu cerintele si constrangerile specificate,
+precum si verificarea respectarii regulilor pentru ca fisierul sa fie bine format
+• Proiectarea documentului JSON
+• Proiectarea DTD‐ului asociat ( definit intern sau extern). Validare.
+• Proiectarea schemei XML. Validare.
+• Crearea unei interfete grafice din care sa se incarce fisierul XML creat, precum si fisierul
+JSON.
+• Explicarea modului de parsare (de navigare printre elemente/atribute) a fisierelor XML si
+JSON.
+• Cautarea unor elemente, precum si afisarea intr‐un raport, dupa parsare, a datelor pastrate
+structurat in documentele XML si JSON.
+• Utilizarea sau crearea unei foi de stiluri pentru a se putea vizualiza datele stocate in fisierul
+xml intr-un format de tabel
+Observatii:
+1. Partile esentiale ale codului sursa trebuie comentat.
+2. Odata alese, temele nu se mai pot schimba.
+3. La punctarea proiectelor se va tine cont de complexitatea lor (minim 3 niveluri si 1 atribut
+la fisierul xml).
+4. Prezentarea proiectului este obligatorie.
+5. In cadrul unei grupe, temele de proiect trebuie sa fie unice.
+Proiect = 50 % din nota finala (40% proiectul propriu-zis si 10% prezentarea acestuia)
+Bibliografie:
+www.w3schools.com
+http://www.xmlvalidation.com/
+http://www.freebookcentre.net/Language/Free-Xml-Books-Download.html

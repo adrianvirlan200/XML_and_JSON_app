@@ -1,0 +1,38 @@
+//cSpell:disable
+
+Tema nr. 29:
+O. Evidenta comenzilor catre furnizorii de marfa pentru un market.
+
+I. Definirea domeniului ales
+
+Domeniul ales se concentreaza pe gestionarea comenzilor date de un
+supermarket furinozrilor sai. Scopul aplicatiei va fi deci gestionarea, 
+monitorizarea si eficientizarea comenzilor.
+
+- Aplicatia va stoca la cel mai inalt nivel comenzi.
+
+- Fiecare comanda va avea mai multe produse si date
+- despre ea: id comanda, data, nume furnizor, pret comanda.
+
+- Pentru ficare produs vom avea: id produs, categorie, numele produsului,
+- nume producator, cantitatea, pret unitar, cat si alte detalii
+- aditionale(numar lot, valabilitate, este_fragil, este_necesar_refrigerare). 
+
+II. Constrangeri
+
+1. Pot exista 0 sau mai multe comenzi.
+2. O comanda are 1 sau mai multe produse.
+3. Toate campurile trebuie sa contina date relevante si complete
+4. Data si valabilitatea vor contine subcampuri de zi([0, 28/30/31]), luna[1, 12], an[2024, inf].
+5. Pretul comenzii este calculat ca suma preturilor produselor.
+6. Pretul produselor este calculat ca produsul dintre cantitate si pret unitar.
+7. Cantitatea produselor este int, > 0.
+8. Pretul unitar este float > 0.
+9. Data nu poate fi in viitor(as dori sa se ia automat data curenta).
+10. Valabilitatea nu poate fi in trecut sau prezent.
+11. Numar lot, id comanda/produs este un numar int > 0.
+12. Este_fragil si este_necesar_refrigerare sunt de tip boolean.
+
+
+
+

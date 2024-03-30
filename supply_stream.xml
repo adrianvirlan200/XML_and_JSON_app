@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE supply_stream SYSTEM "supply_stream.dtd">
+<supply_stream>
+    <order>
+        <order_id>1</order_id>
+        <date>
+            <day>23</day>
+            <month>4</month>
+            <year>2023</year>
+        </date>
+        <supplier_name>Supplier A</supplier_name>
+        <order_price>200.00</order_price>
+        <products>
+            <product>
+                <product_id>1</product_id>
+                <category>Groceries</category>
+                <product_name>Oranges</product_name>
+                <manufacturer_name>Manufacturer A</manufacturer_name>
+                <quantity>8</quantity>
+                <unit_price>1.75</unit_price>
+                <additional_details>
+                    <lot_number>13579</lot_number>
+                    <expiry_date>
+                        <day>31</day>
+                        <month>9</month>
+                        <year>2024</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>false</requires_refrigeration>
+                </additional_details>
+            </product>
+            <product>
+                <product_id>2</product_id>
+                <category>Groceries</category>
+                <product_name>Milk</product_name>
+                <manufacturer_name>Manufacturer C</manufacturer_name>
+                <quantity>3</quantity>
+                <unit_price>2.50</unit_price>
+                <additional_details>
+                    <lot_number>24680</lot_number>
+                    <expiry_date>
+                        <day>31</day>
+                        <month>5</month>
+                        <year>2024</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>true</requires_refrigeration>
+                </additional_details>
+            </product>
+            <product>
+                <product_id>3</product_id>
+                <category>Household</category>
+                <product_name>Dish Soap</product_name>
+                <manufacturer_name>Manufacturer D</manufacturer_name>
+                <quantity>6</quantity>
+                <unit_price>3.00</unit_price>
+                <additional_details>
+                    <lot_number>98765</lot_number>
+                    <expiry_date>
+                        <day>31</day>
+                        <month>12</month>
+                        <year>2029</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>false</requires_refrigeration>
+                </additional_details>
+            </product>
+            <product>
+                <product_id>4</product_id>
+                <category>Household</category>
+                <product_name>Toilet Paper</product_name>
+                <manufacturer_name>Manufacturer E</manufacturer_name>
+                <quantity>10</quantity>
+                <unit_price>1.00</unit_price>
+                <additional_details>
+                    <lot_number>54321</lot_number>
+                    <expiry_date>
+                        <day>31</day>
+                        <month>12</month>
+                        <year>2028</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>false</requires_refrigeration>
+                </additional_details>
+            </product>
+        </products>
+    </order>
+    <order>
+        <order_id>2</order_id>
+        <date>
+            <day>10</day>
+            <month>10</month>
+            <year>2023</year>
+        </date>
+        <supplier_name>Supplier B</supplier_name>
+        <order_price>100.00</order_price>
+        <products>
+            <product>
+                <product_id>10</product_id>
+                <category>Groceries</category>
+                <product_name>Bananas</product_name>
+                <manufacturer_name>Manufacturer A</manufacturer_name>
+                <quantity>5</quantity>
+                <unit_price>1.20</unit_price>
+                <additional_details>
+                    <lot_number>11223</lot_number>
+                    <expiry_date>
+                        <day>31</day>
+                        <month>7</month>
+                        <year>2024</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>false</requires_refrigeration>
+                </additional_details>
+            </product>
+            <product>
+                <product_id>20</product_id>
+                <category>Groceries</category>
+                <product_name>Eggs</product_name>
+                <manufacturer_name>Manufacturer F</manufacturer_name>
+                <quantity>12</quantity>
+                <unit_price>0.50</unit_price>
+                <additional_details>
+                    <lot_number>44556</lot_number>
+                    <expiry_date>
+                        <day>31</day>
+                        <month>5</month>
+                        <year>2024</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>true</requires_refrigeration>
+                </additional_details>
+            </product>
+        </products>
+    </order>
+    <order>
+        <order_id>3</order_id>
+        <date>
+            <day>29</day>
+            <month>3</month>
+            <year>2024</year>
+        </date>
+        <supplier_name>Supplier C</supplier_name>
+        <order_price>80.00</order_price>
+        <products>
+            <product>
+                <product_id>9</product_id>
+                <category>Groceries</category>
+                <product_name>Tomatoes</product_name>
+                <manufacturer_name>Manufacturer A</manufacturer_name>
+                <quantity>7</quantity>
+                <unit_price>1.50</unit_price>
+                <additional_details>
+                    <lot_number>77889</lot_number>
+                    <expiry_date>
+                        <day>20</day>
+                        <month>5</month>
+                        <year>2024</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>false</requires_refrigeration>
+                </additional_details>
+            </product>
+            <product>
+                <product_id>10</product_id>
+                <category>Groceries</category>
+                <product_name>Cheese</product_name>
+                <manufacturer_name>Manufacturer G</manufacturer_name>
+                <quantity>4</quantity>
+                <unit_price>3.50</unit_price>
+                <additional_details>
+                    <lot_number>99001</lot_number>
+                    <expiry_date>
+                        <day>31</day>
+                        <month>12</month>
+                        <year>2025</year>
+                    </expiry_date>
+                    <is_fragile>false</is_fragile>
+                    <requires_refrigeration>true</requires_refrigeration>
+                </additional_details>
+            </product>
+        </products>
+    </order>
+</supply_stream>
