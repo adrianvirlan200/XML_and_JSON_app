@@ -26,6 +26,8 @@ def load_file(file_type):
 def parse_xml(content):
     root = ET.fromstring(content)
 
+    output = ""
+
     for current_order in root.findall('order'):
         order_id = current_order.get('id')
         order_day = current_order.find('date').find('day').text
@@ -35,13 +37,11 @@ def parse_xml(content):
         order_price = current_order.find('order_price').text
         currency = current_order.find('order_price').get('currency')
 
-        print(f"Order ID: {order_id}")
-        print(f"Supplier Name: {supplier_name}")
-        print(f"Order Price: {order_price} {currency}")
-        print(f"Order Date: {order_day}/{order_month}/{order_year}")
-
-    # Accessing nested elements like products
-        print("Products:")
+        output += f"Order ID: {order_id}\n"
+        output += f"Supplier Name: {supplier_name}\n"
+        output += f"Order Price: {order_price} {currency}\n"
+        output += f"Order Date: {order_day}/{order_month}/{order_year}\n"
+        output += "Products:\n"
         for product in current_order.find('products'):
             product_id = product.get('id')
             product_category = product.find('category').text
@@ -61,34 +61,61 @@ def parse_xml(content):
             product_requires_refrigeration = product.find(
                 "additional_details").find('requires_refrigeration').text
 
-            print(
-                f"  -> [{product_category}] {product_name}[id={product_id}]( {quantity} units at {unit_price} each)")
-            print(f"     - Lot Number: {product_lot_number}")
-            print(
-                f"     - Expiry Date: {product_expiry_day}/{product_expiry_month}/{product_expiry_year}")
-            print(f"     - Is Fragile: {product_is_fragile}")
-            print(
-                f"     - Requires Refrigeration: {product_requires_refrigeration}")
-        print("------------------------------------------------------")
+            output += f"  -> [{product_category}] {product_name}[id={product_id}]( {quantity} units at {unit_price} each)\n"
+            output += f"     - Lot Number: {product_lot_number}\n"
+            output += f"     - Expiry Date: {product_expiry_day}/{product_expiry_month}/{product_expiry_year}\n"
+            output += f"     - Is Fragile: {product_is_fragile}\n"
+            output += f"     - Requires Refrigeration: {product_requires_refrigeration}\n"
+        output += "--------------------------------------------------------\n"
+
+    text_area.insert(tk.END, output)
+    text_area.see(tk.END)
 
 
 # Parsing the JSON content
+
+
 def parse_json(content):
     data = json.loads(content)
     orders = data['supply_stream']['order']
 
+    output = ""
     for order in orders:
-        print("Order ID:", order['id'])
-        print("Supplier Name:", order['supplier_name'])
-        print("Order Date:",
-              f"{order['date']['day']}-{order['date']['month']}-{order['date']['year']}")
-        print("Total Order Price:", order['order_price']
-              ['amount'], order['order_price']['currency'])
-        print("Products:")
+        order_id = order['id']
+        order_day = order['date']['day']
+        order_month = order['date']['month']
+        order_year = order['date']['year']
+        supplier_name = order['supplier_name']
+        order_price = order['order_price']['amount']
+        currency = order['order_price']['currency']
+
+        output += f"Order ID: {order_id}\n"
+        output += f"Supplier Name: {supplier_name}\n"
+        output += f"Order Price: {order_price} {currency}\n"
+        output += f"Order Date: {order_day}/{order_month}/{order_year}\n"
+        output += "Products:\n"
+        # Updated this line to correctly reference the product list
         for product in order['products']['product']:
-            print(
-                f"  - {product['product_name']} ({product['quantity']} units at {product['unit_price']} each)")
-        print()
+            product_id = product['id']
+            product_category = product['category']
+            product_name = product['product_name']
+            quantity = product['quantity']
+            unit_price = product['unit_price']
+            product_lot_number = product['additional_details']['lot_number']
+            product_expiry_day = product['additional_details']['expiry_date']['day']
+            product_expiry_month = product['additional_details']['expiry_date']['month']
+            product_expiry_year = product['additional_details']['expiry_date']['year']
+            product_is_fragile = product['additional_details']['is_fragile']
+            product_requires_refrigeration = product['additional_details']['requires_refrigeration']
+
+            output += f"  -> [{product_category}] {product_name}[id={product_id}]( {quantity} units at {unit_price} each)\n"
+            output += f"     - Lot Number: {product_lot_number}\n"
+            output += f"     - Expiry Date: {product_expiry_day}/{product_expiry_month}/{product_expiry_year}\n"
+            output += f"     - Is Fragile: {product_is_fragile}\n"
+            output += f"     - Requires Refrigeration: {product_requires_refrigeration}\n"
+        output += "------------------------------------------------------\n"
+
+    text_area.insert(tk.END, output)
 
 
 root = tk.Tk()
