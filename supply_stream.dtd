@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT supply_stream (order*)>
-<!ELEMENT order (order_id, date, supplier_name, order_price, products)>
-<!ELEMENT order_id (#PCDATA)>
+<!ELEMENT order (date, supplier_name, order_price, products)>
+<!ATTLIST order id CDATA #REQUIRED>
 <!ELEMENT date (day, month, year)>
 <!ELEMENT day (#PCDATA)>
 <!ELEMENT month (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT supplier_name (#PCDATA)>
 <!ELEMENT order_price (#PCDATA)>
+<!ATTLIST order_price currency CDATA #REQUIRED>
 <!ELEMENT products (product+)>
-<!ELEMENT product (product_id, category, product_name, manufacturer_name, quantity, unit_price, additional_details)>
-<!ELEMENT product_id (#PCDATA)>
+<!ELEMENT product (category, product_name, manufacturer_name, quantity, unit_price, additional_details)>
+<!ATTLIST product id CDATA #REQUIRED>
 <!ELEMENT category (#PCDATA)>
 <!ELEMENT product_name (#PCDATA)>
 <!ELEMENT manufacturer_name (#PCDATA)>
@@ -21,4 +22,3 @@
 <!ELEMENT expiry_date (day, month, year)>
 <!ELEMENT is_fragile (#PCDATA)>
 <!ELEMENT requires_refrigeration (#PCDATA)>
-
