@@ -18,6 +18,26 @@
         </xs:simpleContent>
     </xs:complexType>
 
+    <xs:simpleType name="dayType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="31" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="monthType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="12" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="yearType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="2024" />
+        </xs:restriction>
+    </xs:simpleType>
+
     <!--Strucutra
     XML Schema -->
     <xs:element name="supply_stream">
@@ -29,9 +49,9 @@
                             <xs:element name="date">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="day" type="xs:integer" />
-                                        <xs:element name="month" type="xs:integer" />
-                                        <xs:element name="year" type="xs:integer" />
+                                        <xs:element name="day" type="dayType" />
+                                        <xs:element name="month" type="monthType" />
+                                        <xs:element name="year" type="yearType" />
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
@@ -58,11 +78,11 @@
                                                                     <xs:complexType>
                                                                         <xs:sequence>
                                                                             <xs:element name="day"
-                                                                                type="xs:integer" />
+                                                                                type="dayType" />
                                                                             <xs:element name="month"
-                                                                                type="xs:integer" />
+                                                                                type="monthType" />
                                                                             <xs:element name="year"
-                                                                                type="xs:integer" />
+                                                                                type="yearType" />
                                                                         </xs:sequence>
                                                                     </xs:complexType>
                                                                 </xs:element>

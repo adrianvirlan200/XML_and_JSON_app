@@ -8,7 +8,7 @@
         <date>
             <day>23</day>
             <month>4</month>
-            <year>2023</year>
+            <year>2025</year>
         </date>
         <supplier_name>Supplier A</supplier_name>
         <order_price currency="RON">200.00</order_price>
@@ -87,7 +87,7 @@
         <date>
             <day>10</day>
             <month>10</month>
-            <year>2023</year>
+            <year>2027</year>
         </date>
         <supplier_name>Supplier B</supplier_name>
         <order_price currency="EUR">100.00</order_price>
